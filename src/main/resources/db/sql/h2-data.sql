@@ -6,4 +6,4 @@ INSERT INTO member (name, password, role, created_date)
 VALUES ('admin', '$2a$12$0NFc/knrsLHKhHrP.0FZgOBWFBcinn9DDjV.l/n0Kd6D9FFlyUWaO', 'ROLE_ADMIN', now());
 
 INSERT INTO member (name, password, role, created_date)
-VALUES ('bob', '$2a$12$0NFc/knrsLHKhHrP.0FZgOBWFBcinn9DDjV.l/n0Kd6D9FFlyUWaO', 'ROLE_ADMIN', now());
+VALUES ('bob', '$2a$12$0NFc/knrsLHKhHrP.0FZgOBWFBcinn9DDjV.l/n0Kd6D9FFlyUWaO', 'ROLE_USER', now());
