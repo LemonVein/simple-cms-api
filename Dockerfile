@@ -1,10 +1,12 @@
 
-FROM gradle:8.6-jdk25 AS builder
+FROM eclipse-temurin:25-jdk-alpine AS builder
 WORKDIR /app
 
 COPY . .
 
-RUN gradle bootjar -x test
+RUN chmod +x ./gradlew
+
+RUN ./gradlew bootJar -x test
 
 FROM eclipse-temurin:25-jre-alpine
 WORKDIR /app
