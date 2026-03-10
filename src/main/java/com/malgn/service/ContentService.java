@@ -65,6 +65,9 @@ public class ContentService {
         if (content == null) {
             throw new EntityNotFoundException("콘텐츠를 찾을 수 없습니다.");
         }
+
+        content.setViewCount(content.getViewCount() + 1);
+
         return ContentDto.builder()
                 .id(content.getId())
                 .title(content.getTitle())
